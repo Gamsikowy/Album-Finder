@@ -6,7 +6,7 @@
 ## Goal of the project:
 The user provides the artist and the song title, on the basis of which the application will search for the album without interaction with the user. Search is done by entering the website: https://genius.com, using the chromium engine in headless mode, i.e. without a graphic interface. After finding the desired album, its title and cover are presented with redirection to the genius.com website.<br>
 Below are two screenshots showing the operation of the application. The first shows the status before, while the second shows the status after the search:<br>
-![Application state before searching](./results/before.png) <br>
+![Application state before searching](./results/before.png) <br><br>
 ![Application status after searching](./results/after.png)
 ## Technologies:
 * body-parser: 1.19.0<br>
