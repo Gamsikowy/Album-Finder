@@ -13,8 +13,7 @@ app.use(express.static(__dirname + '/funcionality'));
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, console.log(`Server started on port ${PORT}`));
 
-// @route POST /
-// @desc Search with puppeteer
+// search with puppeteer
 app.post('/searching', (req, res) => {
     let author = req.body.author;
     let searchTitle = req.body.title.trim();
@@ -85,7 +84,7 @@ app.post('/searching', (req, res) => {
                 if (!running) break;
             }
     } catch (err) {
-            console.log(err);
+            console.error(err);
         } 
 
         console.log(result);
